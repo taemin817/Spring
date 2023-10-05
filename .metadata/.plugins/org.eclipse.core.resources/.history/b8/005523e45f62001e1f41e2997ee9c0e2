@@ -1,0 +1,13 @@
+package com.acorn.test;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HelloController {
+	
+	@GetMapping("/hello")
+	public String hi() {
+		return "hi";		// WEB-INF/views/hi.jsp라는 view를 응답하겠다
+	}
+
+}

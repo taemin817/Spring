@@ -1,0 +1,27 @@
+package com.acorn.test;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class TestController {
+
+	@GetMapping("/result1")
+	public String m1(Model model) {
+		model.addAttribute("cheers", "파이팅해야지");
+		return "result1";
+	}
+	
+	@GetMapping("/result2")
+	public String m2(Model model) {
+		model.addAttribute("cheers", "힘내");
+		return "result2";
+	}
+	
+	@GetMapping("/result3")
+	public String m3(Model model) {
+		model.addAttribute("cheers", "fighting");
+		return "result3";
+	}
+}
