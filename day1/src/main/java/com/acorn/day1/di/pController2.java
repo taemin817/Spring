@@ -9,7 +9,6 @@ public class pController2 {
 
 	//@Autowired		// 주입 어노테이션
 	Program p;
-	
 
 	@Autowired
 	public void setP(Program p) {

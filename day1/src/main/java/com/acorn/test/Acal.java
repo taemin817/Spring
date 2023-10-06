@@ -1,5 +1,8 @@
 package com.acorn.test;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Acal implements Cal{
 
 	@Override

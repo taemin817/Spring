@@ -8,17 +8,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ProCon{
 
 	@Autowired
-	Pro p;
-
-	@Autowired
-	public void setP(Pro p) {
-		this.p = p;
+	Pro pro;
+	
+	@ GetMapping("/pView2")
+	public void test1() {
+		int result = pro.addP(2, 2);
+		System.out.println(result);
 	}
 	
-	@GetMapping("/p")
-	public String test1()	{
-		int result = p.addP(2, 3);
-		System.out.println(result);
-		return "pView2";
+	public Pro getP() {
+		return pro;
 	}
 }

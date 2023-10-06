@@ -1,10 +1,12 @@
 package com.acorn.test;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Pro {
 	
+	@Autowired
 	Cal cal;
 	
 	public int addP(int a, int b) {
