@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,6 +29,6 @@ function delete1(){
 </head>
 <body>
 	<input type="text" id="code" placeholder="d0003">
-	<button onclick=delete1()>삭제</button>
+	<button onclick="delete1()">삭제</button>
 </body>
 </html>
