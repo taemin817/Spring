@@ -17,7 +17,7 @@ public class NaverController {
 	ApiExamSearchBlog2 api2;
 	
 	@ResponseBody
-	@GetMapping(value="/naver", produces = "application/json;charset=UTF-8")
+	//@GetMapping(value="/naver", produces = "application/json;charset=UTF-8")
 	public String naverAPi() {
 		
 		String result = api.getNaverAPI();
@@ -25,7 +25,7 @@ public class NaverController {
 	}
 	
 	@ResponseBody
-	@GetMapping( value="/naverList"  )
+	//@GetMapping( value="/naverList"  )
 	public ArrayList<ItemDTO> naverAPI2(){
 		String result  =api2.getNaverAPI();
 		ArrayList<ItemDTO> list  =api2.fromJSONtoItems(result);
