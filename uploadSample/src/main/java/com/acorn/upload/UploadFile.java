@@ -5,7 +5,7 @@ package com.acorn.upload;
 public class UploadFile {
 
     private String uploadFileName;   // 실제파일명    
-    private String storeFileName;     //저장파일명
+    private String storeFileName;    // 저장파일명
 
     public UploadFile(String uploadFileName, String storeFileName) {
         this.uploadFileName = uploadFileName;
