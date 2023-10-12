@@ -31,7 +31,6 @@ public class FileItemController {
 		return  "item-form"; 
 	}
 		
-
 	@PostMapping("/uploadMulti")
 	public String upload2(ItemForm form, Model model)  throws IOException   {
 		System.out.println( form );		
@@ -46,8 +45,6 @@ public class FileItemController {
 		return  "upload-ok";				
 	}
 
-
-
 	private List<String> getFileNames(List<UploadFile> storeImageFiles) {
 		List<String> fileNames = new ArrayList<String>();
 		for( UploadFile uploadFile : storeImageFiles) {
@@ -55,8 +52,6 @@ public class FileItemController {
 		}
 		return fileNames;
 	}
-	
-	
 	
 	@ResponseBody	
 	@RequestMapping( value="/images/{fileName:.*}" , method=RequestMethod.GET)
