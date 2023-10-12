@@ -217,3 +217,32 @@
 10월 10, 2023 18:19:50.301 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 10월 10, 2023 18:24:23.463 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 10월 10, 2023 18:28:20.692 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+10월 12, 2023 09:31:49.373 NEW SESSION
+10월 12, 2023 09:31:49.373 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 09:34:40.794 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 09:38:52.143 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 09:44:06.962 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 09:46:04.607 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 09:54:33.259 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 10:04:31.10 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 10:09:03.580 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 10:23:13.824 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 10:43:41.255 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 10:46:14.73 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 11:08:11.11 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 11:35:09.750 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 14:06:43.87 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 14:07:20.512 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 14:21:49.490 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 15:17:27.781 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 15:20:06.672 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 15:21:50.239 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 15:24:10.348 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 15:59:06.331 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 16:01:54.321 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 16:25:07.307 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 16:33:16.588 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 17:03:07.630 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 17:05:28.522 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+10월 12, 2023 17:44:05.179 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
