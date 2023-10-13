@@ -21,7 +21,7 @@ import org.springframework.web.util.UriUtils;
 @Controller
 public class Download {
 	
-	String fileDir ="c:\\test\\upload\\";
+	String fileDir ="c:\\upload\\";
 	
 	@GetMapping("/download")
 	public String form() {

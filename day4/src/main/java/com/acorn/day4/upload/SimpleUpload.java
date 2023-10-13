@@ -31,17 +31,18 @@ public class SimpleUpload {
 	@PostMapping("/upload") //post라 맵핑이름 같아도 괜찮
 	public String upload(String goodsCode,MultipartFile file, Model model) throws IllegalStateException, IOException {
 		
-		if(!file.isEmpty()) {
+		if(!file.isEmpty()) {	// 파일을 첨부하지 않고 전송버튼을 누르는 경우를 제외하고 = 파일이 첨부되고 전송버튼을 누르는 경우
 			String fileRealName = file.getOriginalFilename();
-			String fullPath = fileDir + fileRealName; // "c:\\test\\upload" 이 경로 밑에 저장된다 
-			file.transferTo(new File(fullPath));
+			String fullPath = fileDir + fileRealName;
+			file.transferTo(new File(fullPath)); // "c:\\upload\\" 이 경로 밑에 저장된다 
 			model.addAttribute("filename", fileRealName);
 		}
 		return "upload-ok"; //뷰이름
 	}
 	@ResponseBody
-	@RequestMapping( value="/images/{fileName:.*}" , method=RequestMethod.GET)	
-	public Resource  imageView(@PathVariable String fileName) throws MalformedURLException {		
+	@GetMapping( value="/images/{fileName:.*}")	
+	public Resource  imageView(@PathVariable String fileName) throws MalformedURLException {
+												// 웹 요청의 url경로에서 특정 부분{fileName:.*}을 추출하여 fileName 매개변수로 전달
 		return new UrlResource("file:c:\\upload\\"+ fileName);		
 	}
 }
