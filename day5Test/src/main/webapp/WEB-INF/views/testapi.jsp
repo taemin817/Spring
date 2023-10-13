@@ -20,17 +20,17 @@
 	
 	<table>
 		<tr>
-			<td>제목</td>
-			<td>링크</td>
-			<td>가격</td>
+			<td>그레이드</td>
+			<td>원인</td>
+			<td>오버롤</td>
 		
 		</tr>
-		<c:forEach var="naver" items="${testList}">
+		<c:forEach var="apitest" items="${inform}">
 		
 		<tr>
-			<td>${testList.informCause}</td>
-			<td>${testList.informData}</td>
-			<td>${testList.informGrade}</td>
+			<td>${apitest.informGrade}</td>
+			<td>${apitest.informCause}</td>
+			<td>${apitest.informOverall}</td>
 		
 		</tr>
 

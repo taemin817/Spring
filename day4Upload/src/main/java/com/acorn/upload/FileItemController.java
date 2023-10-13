@@ -22,43 +22,43 @@ public class FileItemController {
 
 	@Autowired
 	ItemRepository dao;
-	
+
 	@Autowired
 	FileStore store;
-	
+
 	@GetMapping("/uploadMulti")
 	public String upload() {
-		return  "item-form"; 
+		return "item-form";
 	}
-		
+
 	@PostMapping("/uploadMulti")
-	public String upload2(ItemForm form, Model model)  throws IOException   {
-		System.out.println( form );		
-	        List<UploadFile> storeImageFiles = store.storeFiles(form.getImageFiles());	        
-		    Item item = new Item();
-		    item.setId( form.getItemId());
-	        item.setItemName(form.getItemName());	     
-	        item.setImageFiles(storeImageFiles);	       
-	        dao.save(item); 	        
-	        List<String> fileNames = getFileNames(storeImageFiles);	       
-	        model.addAttribute("fileNames" ,fileNames); 	        
-		return  "upload-ok";				
+	public String upload2(ItemForm form, Model model) throws IOException {
+		System.out.println(form);
+		List<UploadFile> storeImageFiles = store.storeFiles(form.getImageFiles());
+		Item item = new Item();
+		item.setId(form.getItemId());
+		item.setItemName(form.getItemName());
+		item.setImageFiles(storeImageFiles);
+		dao.save(item);
+		List<String> fileNames = getFileNames(storeImageFiles);
+		model.addAttribute("fileNames", fileNames);
+		return "upload-ok";
 	}
 
 	private List<String> getFileNames(List<UploadFile> storeImageFiles) {
 		List<String> fileNames = new ArrayList<String>();
-		for( UploadFile uploadFile : storeImageFiles) {
-			 fileNames.add( uploadFile.getStoreFileName());
+		for (UploadFile uploadFile : storeImageFiles) {
+			fileNames.add(uploadFile.getStoreFileName());
 		}
 		return fileNames;
 	}
-	
-	@ResponseBody	
-	@RequestMapping( value="/images/{fileName:.*}" , method=RequestMethod.GET)
-	public Resource imageDownload(@PathVariable String  fileName) throws MalformedURLException {		
-		System.out.println( "fileName" + fileName);
-		return new  UrlResource("file:c:\\upload\\"+ fileName);
-		
+
+	@ResponseBody
+	@RequestMapping(value = "/images/{fileName:.*}", method = RequestMethod.GET)
+	public Resource imageDownload(@PathVariable String fileName) throws MalformedURLException {
+		System.out.println("fileName" + fileName);
+		return new UrlResource("file:c:\\upload\\" + fileName);
+
 	}
-	
+
 }

@@ -26,19 +26,15 @@ public class MemberDAOTest {
 	 @Autowired
 	 DataSource ds;
 	
-	 
 	 @Autowired
 	 MemberDAO  dao;
 	 
-	
    @Test
 	public void test() throws SQLException {
 		//fail("Not yet implemented");
 		Connection con = ds.getConnection();
 		assertTrue(con != null);
 	} 
-   
-   
    
    @Test
 	public void test2() throws SQLException {
