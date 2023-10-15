@@ -7,8 +7,8 @@
 <aop-project name="day5Cookie"/>
 <aop-project name="batisPrac"/>
 <aop-project name="day1"/>
+<aop-project name="batisPrj"/>
 <aop-project name="day2"/>
 <aop-project name="day4"/>
 <aop-project name="day5Test"/>
-<aop-project name="batisPrj"/>
 </aop-reference-model>

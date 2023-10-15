@@ -13,6 +13,7 @@ public class Extest {
 		Extest ex = new Extest();
 		try {
 			int result = ex.add(4, -9);
+			// int result = ex.add(3, 8);
 			System.out.println(result);
 		} catch (Exception e) {
 			System.out.println("음수임");
