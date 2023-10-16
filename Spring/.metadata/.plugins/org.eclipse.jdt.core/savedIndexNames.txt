@@ -1,1 +1,0 @@
-INDEX VERSION 1.131+C:\Users\hbi\Documents\javafullstack\spring_workspace\Spring\.metadata\.plugins\org.eclipse.jdt.core
