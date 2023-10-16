@@ -20,7 +20,7 @@ $.ajax{
 	<form action='<c:url  value="/memberT" />' method="post">
 		<input type="text" name="id"> <input type="text" name="name">
 		<button>등록</button>
-		<button onclick=listup()>조회</button>
+		<button onclick=listup()>조회합니다</button>
 	</form>
 
 </body>
