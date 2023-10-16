@@ -10,7 +10,10 @@ import org.springframework.stereotype.Controller;
 public class MemberRepo {
 	@Autowired
 	private SqlSession session;
-															// memberMapper의 namespace랑 동일하게
+	
+	// crud
+	
+	 											// memberMapper의 namespace랑 동일하게
     private static String namespace = "com.acorn.MemberMapper.";	// 별칭이라 임의작성이지만 마지막 . 은 필수
     
     public List<Member> selectAll(){
@@ -18,6 +21,9 @@ public class MemberRepo {
     }
     
     public Member selectOne(String id) {
+    	
+    	session.selectList(id);
+    	
     	return session.selectOne(namespace+"selectOne", id);
     }
 }

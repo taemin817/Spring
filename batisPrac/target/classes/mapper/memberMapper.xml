@@ -6,6 +6,7 @@
     <select id="selectAll" resultType="Member">
         SELECT * FROM  membertb
     </select>
+    
     <select id="selectOne" resultType="Member" parameterType="String">
         SELECT * FROM membertb where id=#{id}
     </select>

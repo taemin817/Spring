@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 얘가 기준임 -->
+<mapper namespace="com.acorn.PhoneMapper">
+	<select id="selectAll" resultType="Phone">
+		SELECT * FROM phonetbl
+	</select>
+
+	<select id="selectOne" resultType="Phone" parameterType="String">
+		SELECT * FROM phonetbl where modelname=#{modelNm}
+	</select>
+
+	<insert id="insert" parameterType="Member">
+		INSERT INTO phonetbl
+		(brand, modelname, since)
+		VALUES
+		(#{id}, #{modelNm}, #{since})
+	</insert>
+
+	<update id="update" parameterType="Member">
+		UPDATE phonetbl
+		SET brand = #{brand} ,
+		since = #{since)
+		WHERE modelname = #{modelNm}
+	</update>
+
+	<delete id="deleteAll">
+		DELETE FROM phonetbl
+	</delete>
+
+	<delete id="delete" parameterType="String">
+		DELETE FROM phonetbl WHERE modelname = #{modelNm}
+	</delete>
+</mapper>
